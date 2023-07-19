@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--index3-->
+<h1>Local Library Home</h1>
+
+<p>Welcome to Locallibrary, a website developed by <e>Mozilla Developer Network</e> !</p>>
+<h2>Dynamic Content</h2>
+<p>The Library has the following record counts: </p>
+<ul>
+    <li><strong>Books:</strong>{{ num_books }}</li>
+    <li><strong>copies:</strong>{{ num_instances }}</li>
+    <li><strong>copies available:</strong>{{ num_instances_available }}</li>
+  <li><strong>Author:</strong>{{ num_authors }}</li>
+</ul>
+<p>This is book count:{{ bookcount }}</p>
+<p>This is Cookie:{{ cookies }}</p>
+
+
+{% endblock %}
